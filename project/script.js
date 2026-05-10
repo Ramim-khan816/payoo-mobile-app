@@ -13,13 +13,17 @@ document.getElementById('loginbtn').addEventListener('click', function(e){
 
     const pinNumberValueConverted = parseInt(pinNumberValue)
 
-    console.log(mobileNumberValueConverted, pinNumberValueConverted)
+     
     
 
-// if (mobileNumber length > 10){
-//         console.log("valid number")
-        
+if(mobileNumberValueConverted === mobileNumber &&  pinNumberValueConverted === pinNumber){
+         window.location.href="main.html"
+        }
+
     
-//     }
-//     alert("invalid credintials")
+
+else{
+        alert("invalid credentials")
+    }
 })
+
